@@ -1,4 +1,4 @@
-import { getFilteredResults } from 'intuitive-array-handlers/no_modify/get/getFilteredResults';
+import { getFilteredResults } from '@writetome51/array-non-modifying-getters-basic/getFilteredResults';
 import { getAllPropertiesMethods } from './getAllPropertiesMethods';
 
 

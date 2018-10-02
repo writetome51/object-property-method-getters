@@ -1,17 +1,17 @@
-import { getUniqueItems } from 'intuitive-array-handlers/no_modify/get/getUniqueItems';
-import { appendMany } from 'intuitive-array-handlers/modify/return_void/appendOne_appendMany';
+import { getUniqueItems } from '@writetome51/array-get-duplicates-and-unique-items/getUniqueItems';
+import { append } from '@writetome51/array-append-prepend/append-prepend';
 
 
 // Returns all enumerated and inherited properties & methods of obj.
 
 export function getAllPropertiesMethods(obj): string[] {
-	let allproperties = Object.getOwnPropertyNames(obj);
+	let allProperties = Object.getOwnPropertyNames(obj);
 
 	let prototype = Object.getPrototypeOf(obj); // gets own class prototype.
 	while (prototype !== (undefined || null)) {
 		let methods = Object.getOwnPropertyNames(prototype);
-		if (methods) allProperties.push(methods);
+		if (methods) append(methods, allProperties);
 		prototype = Object.getPrototypeOf(prototype); // gets parent prototype.
 	}
-	return getUniqueItems(allproperties);
+	return getUniqueItems(allProperties);
 }

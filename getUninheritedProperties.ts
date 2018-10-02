@@ -1,14 +1,14 @@
 import { getUninheritedPropertiesAndMethods } from './getUninheritedPropertiesAndMethods';
-import {appendOne} from 'intuitive-array-handlers/modify/return_void/appendOne_appendMany';
+import { append } from '@writetome51/array-append-prepend/append-prepend';
 
 
-export function getUninheritedProperties(obj){
+export function getUninheritedProperties(obj): string[] {
 	let propertiesAndMethods = getUninheritedPropertiesAndMethods(obj);
 	let properties = [], i = -1;
 
-	while (++i < propertiesAndMethods.length){
+	while (++i < propertiesAndMethods.length) {
 		if (typeof obj[propertiesAndMethods[i]] !== 'function') {
-			appendOne(propertiesAndMethods[i], properties);
+			append([propertiesAndMethods[i]], properties);
 		}
 	}
 	return properties;

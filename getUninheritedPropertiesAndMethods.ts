@@ -1,10 +1,10 @@
-import { appendMany } from 'intuitive-array-handlers/modify/return_void/appendOne_appendMany';
+import { append } from '@writetome51/array-append-prepend/append-prepend';
 
 
 export function getUninheritedPropertiesAndMethods(obj) {
 	let propertiesAndMethods = Object.getOwnPropertyNames(obj);
 	let objProto = Object.getPrototypeOf(obj);
 	let moreProperties = Object.getOwnPropertyNames(objProto);
-	appendMany(moreProperties, propertiesAndMethods);
+	append(moreProperties, propertiesAndMethods);
 	return propertiesAndMethods;
 }

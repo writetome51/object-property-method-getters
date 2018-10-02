@@ -1,5 +1,6 @@
 import { getUninheritedProperties } from './getUninheritedProperties';
-import { getFilteredResults } from 'intuitive-array-handlers/no_modify/get/getFilteredResults';
+import { getFilteredResults } from '@writetome51/array-non-modifying-getters-basic/getFilteredResults';
+import { _isPublicName } from './_isPublicName';
 
 
 // Only way to ferret out private properties here is to make sure all your private
@@ -7,11 +8,6 @@ import { getFilteredResults } from 'intuitive-array-handlers/no_modify/get/getFi
 
 export function getUninheritedPublicProperties(obj): string[] {
 	let properties = getUninheritedProperties(obj);
-	properties = getFilteredResults(
-		(propertyName) => {
-			return (propertyName[0] !== '_');
-		},
-		properties
-	);
+	properties = getFilteredResults(_isPublicName, properties);
 	return properties;
 }

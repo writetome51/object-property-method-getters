@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var getFilteredResults_1 = require("intuitive-array-handlers/no_modify/get/getFilteredResults");
+var getFilteredResults_1 = require("@writetome51/array-non-modifying-getters-basic/getFilteredResults");
 var getAllPropertiesMethods_1 = require("./getAllPropertiesMethods");
 function _getFunctionsOrNonFunctions(obj, functionsOrNon) {
     var propertiesMethods = getAllPropertiesMethods_1.getAllPropertiesMethods(obj);
