@@ -1,6 +1,6 @@
-import { removeAllOf } from '@writetome51/array-remove-all-of-first-of/removeAllOf_removeAllOfEach';
+import { removeAllOf } from '@writetome51/array-remove-all-of-first-of';
 import { getUninheritedPropertiesAndMethods } from './getUninheritedPropertiesAndMethods';
-import { append } from '@writetome51/array-append-prepend/append-prepend';
+import { append } from '@writetome51/array-append-prepend';
 
 
 export function getUninheritedMethods(obj): string[] {

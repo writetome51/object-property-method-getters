@@ -1,4 +1,4 @@
-import { _getFunctionsOrNonFunctions } from './_getFunctionsOrNonFunctions';
+import { _getFunctionsOrNonFunctions } from './privy/_getFunctionsOrNonFunctions';
 
 
 // To be clear, this does not return methods.  For getting methods, use getAllMethods().

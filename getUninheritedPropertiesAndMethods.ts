@@ -1,4 +1,4 @@
-import { append } from '@writetome51/array-append-prepend/append-prepend';
+import { append } from '@writetome51/array-append-prepend';
 
 
 export function getUninheritedPropertiesAndMethods(obj) {

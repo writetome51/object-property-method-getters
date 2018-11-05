@@ -1,5 +1,5 @@
 import { getUniqueItems } from '@writetome51/array-get-duplicates-and-unique-items/getUniqueItems';
-import { append } from '@writetome51/array-append-prepend/append-prepend';
+import { append } from '@writetome51/array-append-prepend';
 
 
 // Returns all enumerated and inherited properties & methods of obj.

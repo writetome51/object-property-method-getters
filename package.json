@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/object-property-method-getters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library of object-manipulation typescript functions",
   "main": "",
   "scripts": {
@@ -26,6 +26,9 @@
     "@writetome51/array-non-modifying-getters-basic": "latest",
     "@writetome51/array-append-prepend": "latest",
     "@writetome51/array-get-duplicates-and-unique-items": "latest",
-    "@writetome51/array-remove-all-of-first-of": "latest"
+    "@writetome51/array-remove-all-of-first-of": "latest",
+    "@writetome51/array-get-filtered-results": "latest",
+    "value-index-pair-interface": "latest",
+    "array-pluck": "^1.0.0"
   }
 }
